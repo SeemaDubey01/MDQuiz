@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mdquiz</groupId>
-	<artifactId>MDQuiz</artifactId>
+	<artifactId>mdQuiz</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 	<name>MdQuiz</name>
