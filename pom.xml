@@ -43,7 +43,7 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 		<!-- Need this to compile JSP,
-			tomcat-embed-jasper version is not working, no idea why 
+			tomcat-embed-jasper version is not working, no idea why -->
 		<dependency>
 			<groupId>org.eclipse.jdt.core.compiler</groupId>
 			<artifactId>ecj</artifactId>
@@ -51,17 +51,21 @@
 			<scope>provided</scope>
 		</dependency> 
 
-		< Optional, test for static content, bootstrap CSS-->
+		<!--  Optional, test for static content, bootstrap CSS-->
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>3.3.7</version>
 		</dependency>
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+		</dependency>
 		
 	</dependencies>
 
 	<build>
-	<finalName>MDQuiz</finalName>
+	<!--  <finalName>MDQuiz</finalName>  -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
