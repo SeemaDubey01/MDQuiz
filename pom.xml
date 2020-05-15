@@ -8,11 +8,11 @@
 		<version>2.2.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.dequiz</groupId>
-	<artifactId>DeQuiz</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.mdquiz</groupId>
+	<artifactId>MdQuiz</artifactId>
+	<version>1</version>
 	<packaging>war</packaging>
-	<name>DeQuiz</name>
+	<name>MdQuiz</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
