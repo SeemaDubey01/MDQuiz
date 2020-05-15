@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mdquiz</groupId>
-	<artifactId>MdQuiz</artifactId>
-	<version>1</version>
+	<artifactId>MDQuiz</artifactId>
+	<version>1.0</version>
 	<packaging>war</packaging>
 	<name>MdQuiz</name>
 	<description>Demo project for Spring Boot</description>
