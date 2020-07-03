@@ -1,0 +1,65 @@
+85.148.189.6
+DB server - dequizdbserver2
+mdubey/Manish123
+
+create  table de_quiz_quiz (
+dq_quiz_id int primary key not null,
+dq_quiz_detail varchar(100)
+);
+
+create table de_quiz_questions (
+dqs_question_id int primary key not null,
+dqs_question_no int,
+dqs_question varchar(200),
+dqs_option_a varchar (40),
+dqs_option_b varchar (40),
+dqs_option_c varchar (40),
+dqs_option_d varchar (40),
+dqs_answer varchar (1),
+dq_quiz_id int foreign key references de_quiz_quiz(dq_quiz_id),
+dql_user_id varchar(40),
+deqm_quiz_desc varchar(40)
+);
+
+create table de_quiz_test (
+ dqt_sr int primary key not null,
+	dqt_quiz_no int,
+	dqt_user_name varchar(40),
+	dqt_marks int
+	);
+-----------------------
+create table de_quiz_master (
+deqm_sr_nbr int primary key not null,
+deqm_quiz_id int,
+deqm_question_no int,
+deqm_question varchar (200),
+deqm_option_a varchar (40),
+deqm_option_b varchar (40),
+deqm_option_c varchar (40),
+deqm_option_d varchar (40),
+deqm_answer varchar(1),
+deqm_quiz_active varchar(1),
+deqm_timer int
+);
+
+create table de_quiz_user (
+dqu_user_id int primary key not null,
+dqu_quiz_id int,
+dqu_user_name varchar (40),
+dqu_session_id varchar (140),
+dqu_answer varchar (1),
+dqu_marks int,
+dqu_total_marks int,
+dqu_timestamp DATETIME DEFAULT(getdate())
+);
+
+create table de_quiz_login (
+dql_user_id varchar(40),
+dql_password varchar (40),
+dql_first_name varchar (40),
+dql_last_name varchar (40),
+dql_email varchar (40),
+dql_timestamp DATETIME DEFAULT(getdate())
+);
+-----------
+CREATE SEQUENCE HIBERNATE_SEQUENCE START WITH 1 INCREMENT BY 1;
